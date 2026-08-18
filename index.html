@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>Marvel & X-Men - Tracker Cronológico</title>
+</head>
+<body>
+
+    <header>
+        <div class="header-title">MARVEL <span>TRACKER</span></div>
+        <div class="subtitle">Orden Cronológico Completo: Saga X-Men & Universo Cinematográfico de Marvel</div>
+        
+        <div class="progress-container">
+            <div class="progress-stats">
+                <span>Progreso Total Visto</span>
+                <span id="progress-text">0 / 0 (0%)</span>
+            </div>
+            <div class="progress-bar-bg">
+                <div class="progress-bar-fill" id="progress-bar"></div>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <!-- Navigation Filter -->
+        <div class="nav-tabs">
+            <button class="tab-btn active" onclick="filterCategory('all')">Ver Todo</button>
+            <button class="tab-btn" onclick="filterCategory('xmen')">Saga X-Men</button>
+            <button class="tab-btn" onclick="filterCategory('mcu')">UCM (MCU)</button>
+        </div>
+
+        <!-- SECTION 1: X-MEN -->
+        <div id="section-xmen" class="category-section">
+            <div class="section-title">
+                Saga X-Men (Orden Cronológico Interno)
+            </div>
+            <p class="section-desc">Línea temporal interna de los mutantes (Línea original y línea modificada por Días del Futuro Pasado).</p>
+            
+            <div class="cards-grid" id="grid-xmen"></div>
+        </div>
+
+        <!-- SECTION 2: MCU -->
+        <div id="section-mcu" class="category-section">
+            <div class="section-title">
+                Universo Cinematográfico de Marvel (UCM - Orden Cronológico)
+            </div>
+            <p class="section-desc">El desarrollo temporal de la Tierra-616 desde la Segunda Guerra Mundial hasta la Saga del Multiverso.</p>
+            
+            <div class="cards-grid" id="grid-mcu"></div>
+        </div>
+    </div>
+<script src="script.js"></script>
+ =
+</body>
+</html>
